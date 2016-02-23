@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += new Vector3 (0.1f, 0f, 0f);
+		if (Input.GetKeyDown(KeyCode.D)){
+			transform.position += new Vector3 (0.1f, 0f, 0f);	
+		}
 	}
 }
